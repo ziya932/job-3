@@ -5,7 +5,7 @@
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivityDiptiL404">
+    tools:context=".view_dipti_amad_ict_l4_04.MainActivity_Dipti_amad_ict_L4_04">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_menu_dipti_l404" />
+            app:menu="@menu/bottom_menu_dipti_amad_ict_l4_04" />
 
         <fragment
             android:id="@+id/fragmentContainerView"
@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navGraph="@navigation/navigation_diptli_l404" />
+            app:navGraph="@navigation/navigation_dipti_amad_ict_l4_04" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -40,7 +40,7 @@
         android:layout_height="match_parent"
         android:id="@+id/drawerNav"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_head_dipti_l404"
-        app:menu="@menu/bottom_menu_dipti_l404"/>
+        app:headerLayout="@layout/nav_head_dipti_amad_ict_l4_04"
+        app:menu="@menu/bottom_menu_dipti_amad_ict_l4_04"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

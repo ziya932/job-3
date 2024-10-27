@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/friendFragment"
-        android:name="com.example.locationshareddipitl404.FriendFragmentDitpiL404"
+        android:name="com.example.locationshareddipitl404.FriendFragmentDitpi_amad_ict_L4_04"
         android:label="fragment_friend"
-        tools:layout="@layout/fragment_friend_diptil404" >
+        tools:layout="@layout/fragment_friend_dipti_amad_ict_l4_04" >
     </fragment>
     <fragment
         android:id="@+id/profilesFragment"
-        android:name="com.example.locationshareddipitl404.ProfilesFragmentDiptiL404"
+        android:name="com.example.locationshareddipitl404.ProfilesFragmentDipti_amad_ict_L4_04"
         android:label="fragment_profiles"
-        tools:layout="@layout/fragment_profiles_dipti_l404" >
+        tools:layout="@layout/fragment_profiles_dipti_amad_ict_l4_04" >
         <action
             android:id="@+id/action_profilesFragment_to_friendFragment"
             app:destination="@id/friendFragment" />

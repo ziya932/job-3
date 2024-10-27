@@ -8,23 +8,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.example.locationshareddipitl404.databinding. FragmentProfilesDiptiAmadIctL404Binding
 
-import com.example.locationshareddipitl404.databinding.FragmentProfilesDiptiL404Binding
-import com.example.locationshareddipitl404.view.LoginActivityDiptiL404
-import com.example.locationshareddipitl404.view.MainActivityDiptiL404
-import com.example.locationshareddipitl404.viewModelDiptil404.AuthenticationViewModelDiptil404
-import com.example.locationshareddipitl404.viewModelDiptil404.FirestoreViewModelDiptil404
-import com.example.locationshareddipitl404.viewModelDiptil404.LocationViewModelDiptiL404
+import com.example.locationshareddipitl404.view_dipti_amad_ict_l4_04.LoginActivity_Dipti_amad_ict_L4_04
+import com.example.locationshareddipitl404.view_dipti_amad_ict_l4_04.MainActivity_Dipti_amad_ict_L4_04
+import com.example.locationshareddipitl404.viewModel_Dipti_amad_ict_l4_04.AuthenticationViewModel_Dipti_amad_ict_l4_04
+import com.example.locationshareddipitl404.viewModel_Dipti_amad_ict_l4_04.FirestoreViewModel_Dipti_amad_ict_l4_04
+import com.example.locationshareddipitl404.viewModel_Dipti_amad_ict_l4_04.LocationViewModelDipti_amad_ict_L4_04
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.firebase.auth.FirebaseAuth
 
 
-class ProfilesFragmentDiptiL404 : Fragment() {
+class ProfilesFragmentDipti_amad_ict_L4_04 : Fragment() {
 
-    private lateinit var binding: FragmentProfilesDiptiL404Binding
-    private lateinit var firestoreViewModel: FirestoreViewModelDiptil404
-    private lateinit var authenticationViewModel: AuthenticationViewModelDiptil404
-    private lateinit var loactionViewModel: LocationViewModelDiptiL404
+    private lateinit var binding: FragmentProfilesDiptiAmadIctL404Binding
+    private lateinit var firestoreViewModel: FirestoreViewModel_Dipti_amad_ict_l4_04
+    private lateinit var authenticationViewModel: AuthenticationViewModel_Dipti_amad_ict_l4_04
+    private lateinit var loactionViewModel: LocationViewModelDipti_amad_ict_L4_04
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private val firebaseAuth = FirebaseAuth.getInstance()
 
@@ -35,21 +35,21 @@ class ProfilesFragmentDiptiL404 : Fragment() {
     ): View? {
 
 
-        binding = FragmentProfilesDiptiL404Binding.inflate(inflater, container, false)
-        authenticationViewModel = ViewModelProvider(this).get(AuthenticationViewModelDiptil404::class.java)
-        firestoreViewModel = ViewModelProvider(this).get(FirestoreViewModelDiptil404::class.java)
-        loactionViewModel = ViewModelProvider(this).get(LocationViewModelDiptiL404::class.java)
+        binding = FragmentProfilesDiptiAmadIctL404Binding.inflate(inflater, container, false)
+        authenticationViewModel = ViewModelProvider(this).get(AuthenticationViewModel_Dipti_amad_ict_l4_04::class.java)
+        firestoreViewModel = ViewModelProvider(this).get(FirestoreViewModel_Dipti_amad_ict_l4_04::class.java)
+        loactionViewModel = ViewModelProvider(this).get(LocationViewModelDipti_amad_ict_L4_04::class.java)
 
 
         binding.logoutBtn.setOnClickListener {
             firebaseAuth.signOut()
-            startActivity(Intent(requireContext(), LoginActivityDiptiL404::class.java))
+            startActivity(Intent(requireContext(), LoginActivity_Dipti_amad_ict_L4_04::class.java))
 
         }
 
         binding.homeBtn.setOnClickListener {
             firebaseAuth.signOut()
-            startActivity(Intent(requireContext(), MainActivityDiptiL404::class.java))
+            startActivity(Intent(requireContext(), MainActivity_Dipti_amad_ict_L4_04::class.java))
         }
         loadUserInfo()
 

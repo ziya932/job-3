@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FriendFragmentDitpiL404">
+    tools:context=".FriendFragmentDitpi_amad_ict_L4_04">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_userdiptil4" />
+        tools:listitem="@layout/item_user_dipti_amad_ict_l4_04" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"

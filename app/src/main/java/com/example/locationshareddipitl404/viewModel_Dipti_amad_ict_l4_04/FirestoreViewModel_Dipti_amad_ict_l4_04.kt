@@ -1,14 +1,14 @@
-package com.example.locationshareddipitl404.viewModelDiptil404
+package com.example.locationshareddipitl404.viewModel_Dipti_amad_ict_l4_04
 
 import android.content.Context
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
-import com.example.locationshareddipitl404.modelDiptil404.UserDiptiL404
+import com.example.locationshareddipitl404.model_dipti_amad_ict_l4_04.UserDipti_amad_ict_L4_04
 import com.google.firebase.firestore.FirebaseFirestore
 
 
 
-class FirestoreViewModelDiptil404: ViewModel() {
+class FirestoreViewModel_Dipti_amad_ict_l4_04: ViewModel() {
 
          private  val firestore = FirebaseFirestore.getInstance()
          private  val userCollection = firestore.collection("users")
@@ -32,18 +32,18 @@ class FirestoreViewModelDiptil404: ViewModel() {
                 Toast.makeText(context,e.message,Toast.LENGTH_SHORT).show()
             }
     }
-    fun getAllUsers(context: Context,  callback: (List<UserDiptiL404>) -> Unit) {
+    fun getAllUsers(context: Context,  callback: (List<UserDipti_amad_ict_L4_04>) -> Unit) {
         userCollection.get()
             .addOnSuccessListener {
 
-                val userList = mutableListOf<UserDiptiL404>()
+                val userList = mutableListOf<UserDipti_amad_ict_L4_04>()
 
                 for (document in it) {
                     val userId = document.id
                     val displayName = document.getString("displayName") ?: ""
                     val email = document.getString("email") ?: ""
                     val location = document.getString("location") ?: ""
-                    userList.add(UserDiptiL404(userId, displayName, email, location))
+                    userList.add(UserDipti_amad_ict_L4_04(userId, displayName, email, location))
                 }
                 callback(userList)
             }
@@ -92,10 +92,10 @@ class FirestoreViewModelDiptil404: ViewModel() {
                 Toast.makeText(context,e.message,Toast.LENGTH_SHORT).show()
             }
     }
-    fun getUser(context: Context, userId: String, callback: (UserDiptiL404?) -> Unit) {
+    fun getUser(context: Context, userId: String, callback: (UserDipti_amad_ict_L4_04?) -> Unit) {
         userCollection.document(userId).get()
             .addOnSuccessListener { documentSnapshot ->
-                val user = documentSnapshot.toObject(UserDiptiL404::class.java)
+                val user = documentSnapshot.toObject(UserDipti_amad_ict_L4_04::class.java)
                 callback(user)
             }
             .addOnFailureListener { e ->

@@ -1,26 +1,26 @@
-package com.example.locationshareddipitl404.view
+package com.example.locationshareddipitl404.view_dipti_amad_ict_l4_04
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.example.locationshareddipitl404.databinding.ActivityLoginDiptil404Binding
-import com.example.locationshareddipitl404.viewModelDiptil404.AuthenticationViewModelDiptil404
+import com.example.locationshareddipitl404.databinding.ActivityLoginDiptiAmadIctL404Binding
+import com.example.locationshareddipitl404.viewModel_Dipti_amad_ict_l4_04.AuthenticationViewModel_Dipti_amad_ict_l4_04
 
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 
-class LoginActivityDiptiL404 : AppCompatActivity() {
-    private  lateinit var  binding: ActivityLoginDiptil404Binding
-    private  lateinit var  authenticationViewModel: AuthenticationViewModelDiptil404
+class LoginActivity_Dipti_amad_ict_L4_04 : AppCompatActivity() {
+    private  lateinit var  binding: ActivityLoginDiptiAmadIctL404Binding
+    private  lateinit var  authenticationViewModel: AuthenticationViewModel_Dipti_amad_ict_l4_04
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding=  ActivityLoginDiptil404Binding.inflate(layoutInflater)
+        binding=  ActivityLoginDiptiAmadIctL404Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
 
-         authenticationViewModel = ViewModelProvider(this).get(AuthenticationViewModelDiptil404::class.java)
+         authenticationViewModel = ViewModelProvider(this).get(AuthenticationViewModel_Dipti_amad_ict_l4_04::class.java)
 
 
         binding.loginBtn.setOnClickListener{
@@ -38,7 +38,7 @@ class LoginActivityDiptiL404 : AppCompatActivity() {
             }
             else{
                 authenticationViewModel.login(email,password, {
-                    startActivity(Intent(this, MainActivityDiptiL404::class.java))
+                    startActivity(Intent(this, MainActivity_Dipti_amad_ict_L4_04::class.java))
                     finish()
                 },{
                     Toast.makeText(this,it, Toast.LENGTH_SHORT).show()
@@ -47,14 +47,14 @@ class LoginActivityDiptiL404 : AppCompatActivity() {
 
         }
         binding.registerTxt.setOnClickListener{
-                startActivity(Intent(this, RegisterActivityDiptiL404::class.java))
+                startActivity(Intent(this, RegisterActivity_Dipti_amad_ict_L4_04::class.java))
                 finish()
         }
     }
     override fun onStart() {
         super.onStart()
         if(Firebase.auth.currentUser!=null){
-            startActivity(Intent(this@LoginActivityDiptiL404, MainActivityDiptiL404::class.java))
+            startActivity(Intent(this@LoginActivity_Dipti_amad_ict_L4_04, MainActivity_Dipti_amad_ict_L4_04::class.java))
             finish()
         }
     }

@@ -1,4 +1,4 @@
-package com.example.locationshareddipitl404.view
+package com.example.locationshareddipitl404.view_dipti_amad_ict_l4_04
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,15 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.locationshareddipitl404.R
-import com.example.locationshareddipitl404.databinding.ActivityMainDiptiL404Binding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
+import com.example.locationshareddipitl404.databinding.ActivityLoginDiptiAmadIctL404Binding
+import com.example.locationshareddipitl404.databinding.ActivityMainDiptiAmadIctL404Binding
 
-class MainActivityDiptiL404 : AppCompatActivity() {
+class MainActivity_Dipti_amad_ict_L4_04 : AppCompatActivity() {
     lateinit var actionDrawerToggle: ActionBarDrawerToggle
 
     private val binding by lazy {
-        ActivityMainDiptiL404Binding.inflate(layoutInflater)
+        ActivityMainDiptiAmadIctL404Binding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +40,7 @@ class MainActivityDiptiL404 : AppCompatActivity() {
             when (it.itemId) {
                 R.id.logout -> {
                     Firebase.auth.signOut()
-                    startActivity(Intent(this, LoginActivityDiptiL404::class.java))
+                    startActivity(Intent(this, LoginActivity_Dipti_amad_ict_L4_04::class.java))
                     finish()
 
                 }
@@ -56,7 +57,7 @@ class MainActivityDiptiL404 : AppCompatActivity() {
             when (it.itemId) {
                 R.id.logout -> {
                     Firebase.auth.signOut()
-                    startActivity(Intent(this, LoginActivityDiptiL404::class.java))
+                    startActivity(Intent(this, LoginActivity_Dipti_amad_ict_L4_04::class.java))
                     finish()
 
                 }

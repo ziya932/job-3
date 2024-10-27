@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ProfilesFragmentDiptiL404">
+    tools:context=".ProfilesFragmentDipti_amad_ict_L4_04">
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout0"
         android:layout_width="0dp"

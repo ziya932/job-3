@@ -1,16 +1,12 @@
-package com.example.locationshareddipitl404.viewModelDiptil404
+package com.example.locationshareddipitl404.viewModel_Dipti_amad_ict_l4_04
 
-import android.Manifest
-import android.Manifest.*
-import android.content.pm.PackageManager
-import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.location.FusedLocationProviderClient
 
 import com.google.android.gms.tasks.OnCompleteListener
 
 
-class LocationViewModelDiptiL404:ViewModel() {
+class LocationViewModelDipti_amad_ict_L4_04:ViewModel() {
 
     private var fusedLocationClient: FusedLocationProviderClient? = null
 

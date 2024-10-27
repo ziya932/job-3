@@ -19,12 +19,12 @@
             android:value="AIzaSyCOqEWK4ehZK0QC4qWgtGIrDhN7JqV3FaU" />
 
         <activity
-            android:name=".view.MapsActivityDiptiL404"
+            android:name=".view_dipti_amad_ict_l4_04.MapsActivity_Dipti_amad_ict_L4_04"
             android:exported="false"
             android:theme="@style/Theme.LocationSharedDipitL404" />
 
         <activity
-            android:name=".view.LoginActivityDiptiL404"
+            android:name=".view_dipti_amad_ict_l4_04.LoginActivity_Dipti_amad_ict_L4_04"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,11 +34,11 @@
         </activity>
 
         <activity
-            android:name=".view.RegisterActivityDiptiL404"
+            android:name=".view_dipti_amad_ict_l4_04.RegisterActivity_Dipti_amad_ict_L4_04"
             android:exported="false" />
 
         <activity
-            android:name=".view.MainActivityDiptiL404"
+            android:name=".view_dipti_amad_ict_l4_04.MainActivity_Dipti_amad_ict_L4_04"
             android:exported="false"/>
 
     </application>

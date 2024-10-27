@@ -1,18 +1,18 @@
-package com.example.locationshareddipitl404.adapterdiptil404
+package com.example.locationshareddipitl404.adapter_dipti_amad_ict_l4_04
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.locationshareddipitl404.databinding.ItemUserdiptil4Binding
+import com.example.locationshareddipitl404.databinding.ItemUserDiptiAmadIctL404Binding
 
-import com.example.locationshareddipitl404.modelDiptil404.UserDiptiL404
+import com.example.locationshareddipitl404.model_dipti_amad_ict_l4_04.UserDipti_amad_ict_L4_04
 
 
-class UserAdapterDIPTIL404(private var userList: List<UserDiptiL404>) : RecyclerView.Adapter<UserAdapterDIPTIL404.UserViewHolder>() {
+class UserAdapterDIPTI_amad_ict_L4_04(private var userList: List<UserDipti_amad_ict_L4_04>) : RecyclerView.Adapter<UserAdapterDIPTI_amad_ict_L4_04.UserViewHolder>() {
 
-    class UserViewHolder(private val binding: ItemUserdiptil4Binding) :
+    class UserViewHolder(private val binding: ItemUserDiptiAmadIctL404Binding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(user: UserDiptiL404) {
+        fun bind(user: UserDipti_amad_ict_L4_04) {
 
             binding.apply {
                 displayNameTxt.text = user.displayName
@@ -25,7 +25,7 @@ class UserAdapterDIPTIL404(private var userList: List<UserDiptiL404>) : Recycler
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
         return UserViewHolder(
-            ItemUserdiptil4Binding.inflate(
+            ItemUserDiptiAmadIctL404Binding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -43,7 +43,7 @@ class UserAdapterDIPTIL404(private var userList: List<UserDiptiL404>) : Recycler
         holder.bind(user)
 
     }
-    fun updateData(newList: List<UserDiptiL404>) {
+    fun updateData(newList: List<UserDipti_amad_ict_L4_04>) {
 
         userList = newList
         notifyDataSetChanged()
