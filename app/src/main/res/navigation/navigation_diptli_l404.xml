@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_diptli_l404"
+    app:startDestination="@id/friendFragment">
+
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.locationshareddipitl404.FriendFragmentDitpiL404"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend_diptil404" >
+    </fragment>
+    <fragment
+        android:id="@+id/profilesFragment"
+        android:name="com.example.locationshareddipitl404.ProfilesFragmentDiptiL404"
+        android:label="fragment_profiles"
+        tools:layout="@layout/fragment_profiles_dipti_l404" >
+        <action
+            android:id="@+id/action_profilesFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
+    </fragment>
+</navigation>
